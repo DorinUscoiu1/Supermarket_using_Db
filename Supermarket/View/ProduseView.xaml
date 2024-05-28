@@ -1,0 +1,61 @@
+﻿<Window x:Class="Supermarket.View.ProduseView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Supermarket.ViewModel"
+        xmlns:localConverter="clr-namespace:Supermarket.Converters"
+        mc:Ignorable="d"
+        Title="Produs" Height="600" Width="600">
+    <Window.DataContext>
+        <local:ProduseVM/>
+    </Window.DataContext>
+    <StackPanel>
+        <StackPanel.Resources>
+            <localConverter:ProdusConvert x:Key="produsConvert" />
+        </StackPanel.Resources>
+        <WrapPanel>
+            <Button Content="Adauga" Margin="15" Width="100" Height="30" Command="{Binding AddCommand}">
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource produsConvert}">
+                        <Binding ElementName="txtNume" Path="Text" Mode="TwoWay"/>
+                        <Binding ElementName="txtCodBare" Path="Text" Mode="TwoWay"/>
+                        <Binding ElementName="cbCategoria" Path="SelectedItem" Mode="TwoWay"/>
+                        <Binding ElementName="cbProducator" Path="SelectedItem" Mode="TwoWay"/>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+            <Button Content="Modifica" Margin="15" Width="100" Height="30" Command="{Binding UpdateCommand}"/>
+            <Button Content="Sterge" Margin="15" Width="100" Height="30" Command="{Binding DeleteCommand}"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="Nume" Margin="15" Width="50" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <TextBox Margin="15" Name="txtNume" Width="200" Height="30" Text="{Binding SelectedProdus.Nume, Mode=TwoWay}"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="Cod Bare" Margin="15" Width="100" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <TextBox Margin="15" Name="txtCodBare" Width="200" Height="30" Text="{Binding SelectedProdus.CodBare, Mode=TwoWay}"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="Categoria" Margin="15" Width="100" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <ComboBox Margin="15" Name="cbCategoria" Width="200" Height="30" ItemsSource="{Binding CategoriiList}" DisplayMemberPath="Nume" SelectedValuePath="Id" SelectedItem="{Binding SelectedProdus.Categoria, Mode=TwoWay}"/>
+        </WrapPanel>
+        <WrapPanel>
+            <Label Content="Producator" Margin="15" Width="100" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <ComboBox Margin="15" Name="cbProducator" Width="200" Height="30" ItemsSource="{Binding ProducatoriList}" DisplayMemberPath="Nume" SelectedValuePath="Id" SelectedItem="{Binding SelectedProdus.Producator, Mode=TwoWay}"/>
+        </WrapPanel>
+        <ListBox Margin="15" Width="550" Height="200" ItemsSource="{Binding ProduseList}" SelectedItem="{Binding SelectedProdus}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Nume}" Width="100"/>
+                        <TextBlock Text="{Binding CodBare}" Width="100"/>
+                        <TextBlock Text="{Binding Categoria.Nume}" Width="100"/>
+                        <TextBlock Text="{Binding Producator.Nume}" Width="100"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock Margin="15" Foreground="Red" Text="{Binding ErrorMessage}" />
+    </StackPanel>
+</Window>

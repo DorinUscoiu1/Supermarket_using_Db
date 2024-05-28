@@ -1,0 +1,37 @@
+﻿<Window x:Class="Supermarket.View.AdminView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin" Height="400" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#F0F0F0">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" Width="300">
+            <TextBlock Text="Supermarket Admin" FontSize="24" FontWeight="Bold" Foreground="#007ACC" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <Button Content="Utilizatori" Command="{Binding OpenUsersCommand}" />
+            <Button Content="Categorii" Command="{Binding OpenCategoriesCommand}" />
+            <Button Content="Producători" Command="{Binding OpenManufacturersCommand}" />
+            <Button Content="Produse" Command="{Binding OpenProductsCommand}" />
+            <Button Content="Stocuri" Command="{Binding OpenStocksCommand}" />
+        </StackPanel>
+    </Grid>
+</Window>

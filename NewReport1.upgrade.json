@@ -1,0 +1,1551 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": true
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-05-21T15:34:17.127723Z",
+  "analysisEndTime": "2024-05-21T15:34:49.1192884Z",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 4,
+      "incidents": 61,
+      "effort": 61
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 10,
+        "Optional": 51,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 2,
+        "Api": 59
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 61,
+      "ruleInstances": [
+        {
+          "incidentId": "3879d550-4a2b-4244-8d16-d06461560c8a",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj"
+          }
+        },
+        {
+          "incidentId": "ca4bc8dd-1499-498c-94d9-c654a19903c6",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "130bf29e-8e3d-4185-b84a-81ff3e7f365c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Security.PermissionSet System.Windows.Interop.PresentationHostSecurityManager::AddPermissionForUri(System.Security.PermissionSet,System.Uri)\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b6634fe7-faa4-4aab-b4c1-422ba995911e",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.WebBrowserPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2b279ca1-314d-4bcd-8f10-0ae2212e29d1",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.WebBrowserPermission::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "54be88f8-91c5-4b47-99bc-46a6345d23ac",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.UserInitiatedRoutedEventPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "4e21fd7a-0cea-47f7-98e2-b885652bdef8",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission MS.Internal.Permissions.InternalParameterlessPermissionBase::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "cc9559b6-8628-410c-ac23-aea0a776ccbc",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission MS.Internal.Permissions.InternalParameterlessPermissionBase::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e1d23732-9741-4fc6-8945-ad01a907f5da",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Security.PermissionSet System.Windows.Input.ISecureCommand::UserInitiatedPermission()\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e41e248c-5b7c-435b-9385-4b27eef0e66c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Void System.Windows.DeferrableContent::set_LoadPermission(System.Xaml.Permissions.XamlLoadPermission)\r\n    -\u003E System.Xaml.Permissions.XamlLoadPermission",
+            "protectedId": "T:System.Xaml.Permissions.XamlLoadPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.xaml.permissions.xamlloadpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e56693f5-e2c6-43a1-9395-4328faab91b5",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Windows.Input.RoutedUICommand MS.Internal.CommandLibraryHelper::CreateUICommand(System.String,System.Type,System.Byte,System.Security.PermissionSet)\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c927308a-0cd1-4e77-bfe0-d77d6222d726",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Void MS.Internal.SecurityHelper::DemandMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionImage",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionImage",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionimage",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "f583c4ba-92b3-43f1-93c5-425402a119b2",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Void MS.Internal.SecurityHelper::DemandMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionVideo",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionVideo",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionvideo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e8efdf2d-eea9-4135-90c9-92d3341646b6",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.MediaPermissionAttribute::.ctor(System.Security.Permissions.SecurityAction)\r\n    -\u003E System.Security.Permissions.SecurityAction",
+            "protectedId": "T:System.Security.Permissions.SecurityAction",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securityaction",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2a961a3d-cb71-45cf-899a-384d6349b455",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.MediaPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7cbbfef2-a585-498c-9bad-ced815a170e3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7910ea8d-92fd-4fce-9311-02b487b428a3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.InternalParameterlessPermissionBase\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "edd6e17d-db48-4d12-b1b0-ccc3524f54e6",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Xaml.Permissions.XamlLoadPermission System.Windows.DeferrableContent::LoadPermission()\r\n    -\u003E System.Xaml.Permissions.XamlLoadPermission",
+            "protectedId": "T:System.Xaml.Permissions.XamlLoadPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.xaml.permissions.xamlloadpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2bd2264b-0f3e-4609-bdb7-5593cd309402",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Security.PermissionSet MS.Internal.SecurityHelper::EnvelopePermissionSet()\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d040a616-c8e3-4c5e-be98-8d51e83d6df2",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Boolean MS.Internal.SecurityHelper::CallerHasMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionAudio",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionAudio",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionaudio",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a79c86fb-1636-4c3e-81d1-76e15d009aaa",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Void MS.Internal.SecurityHelper::DemandMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionAudio",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionAudio",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionaudio",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "fd8dee9a-6b52-4b28-a8d6-854b5519dc30",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Boolean System.Security.Permissions.MediaPermission::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "1dcdcd4e-092d-4a06-9978-a015b36737b4",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "eb52f9ee-e319-446e-b2b2-b2f8322a6909",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.WebBrowserPermission::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "aedb777d-2adc-42e1-b6ca-f3951204f719",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void System.Security.Permissions.WebBrowserPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d13e667e-455f-4e4b-9bf9-79b62c485793",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Void System.Windows.TemplateContent::set_LoadPermission(System.Xaml.Permissions.XamlLoadPermission)\r\n    -\u003E System.Xaml.Permissions.XamlLoadPermission",
+            "protectedId": "T:System.Xaml.Permissions.XamlLoadPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.xaml.permissions.xamlloadpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "00fd666e-b8e5-43fa-ad33-fed3e7edde98",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Boolean System.Security.Permissions.WebBrowserPermission::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c5db7a81-9aae-463d-be63-83f3d96d3938",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.UserInitiatedRoutedEventPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "d827350b-6757-417f-bcba-6a04b877a5ac",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Xaml.Permissions.XamlLoadPermission System.Windows.TemplateContent::LoadPermission()\r\n    -\u003E System.Xaml.Permissions.XamlLoadPermission",
+            "protectedId": "T:System.Xaml.Permissions.XamlLoadPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.xaml.permissions.xamlloadpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "86bf7665-4205-4177-aadf-d8580faea615",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Void MS.Internal.Permissions.UserInitiatedNavigationPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "45d11c3e-054c-4b24-95b8-30c425b47885",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.MediaPermission::Intersect(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "983e7f8e-0576-418d-849f-4217054ddc2e",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "6f062559-a720-409e-bd6f-0c237d57ae6c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.UserInitiatedRoutedEventPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "ec3a8f40-bc31-42d9-9ba1-02a1c37f9b2d",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.InternalParameterlessPermissionBase\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "bd7e5cca-8469-4f00-90e3-466c4d9c8fb1",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Void System.Windows.Input.SecureUICommand::.ctor(System.Security.PermissionSet,System.String,System.Type,System.Byte)\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "92a6ab6b-d855-4aad-82d5-808cff9f0140",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Boolean MS.Internal.SecurityHelper::CallerHasMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionImage",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionImage",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionimage",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0ac25e9a-368d-441a-be90-06bf5b088472",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Boolean MS.Internal.SecurityHelper::AppDomainHasPermission(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2982a45b-119a-433a-8e78-f304f2b5aeb8",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Security.CodeAccessPermission System.Windows.Media.GlyphTypeface::CriticalUriDiscoveryPermission()\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b968cbb1-b0a1-4ce6-ba44-ad74ee7dce7f",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.RightsManagementPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "abef963e-dc93-4852-b64d-0404d6bd3649",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.CompoundFileIOPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "dded6f63-be77-43b9-8cef-a7d05afb068d",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.InternalParameterlessPermissionBase::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e8627a71-daa7-495d-b4e0-967b9dd80e73",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Security.PermissionSet System.Windows.Input.SecureUICommand::UserInitiatedPermission()\r\n    -\u003E System.Security.PermissionSet",
+            "protectedId": "T:System.Security.PermissionSet",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissionset",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "a7af60bc-507b-44ff-ba91-d4174d557454",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermission MS.Internal.PresentationFramework.SecurityHelper::CachedWebBrowserPermission()\r\n    -\u003E System.Security.Permissions.WebBrowserPermission",
+            "protectedId": "T:System.Security.Permissions.WebBrowserPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.webbrowserpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "fccac707-aea0-46fe-b2f3-42c96916fb7c",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.TimeSpan MS.Internal.Utility.SponsorHelper::System.Runtime.Remoting.Lifetime.ISponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)\r\n    -\u003E System.Runtime.Remoting.Lifetime.ILease",
+            "protectedId": "T:System.Runtime.Remoting.Lifetime.ILease",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.remoting.lifetime.ilease",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "6419dca6-4f41-4950-ac8f-ba5c26b7e504",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Boolean MS.Internal.Permissions.InternalParameterlessPermissionBase::IsSubsetOf(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "f80ab5d4-8306-475b-8b49-ec611a6ef960",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "MS.Internal.MissingDependencyType MS.Internal.DeploymentExceptionMapper::GetWinFXRequirement(System.Exception,System.Deployment.Application.InPlaceHostingManager,System.String\u0026,System.Uri\u0026)\r\n    -\u003E System.Deployment.Application.InPlaceHostingManager",
+            "protectedId": "T:System.Deployment.Application.InPlaceHostingManager",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.deployment.application.inplacehostingmanager",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "3fe4c08a-a90e-428a-81fb-9f263be230c3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Boolean MS.Internal.SecurityHelper::CallerHasMediaPermission(System.Security.Permissions.MediaPermissionAudio,System.Security.Permissions.MediaPermissionVideo,System.Security.Permissions.MediaPermissionImage)\r\n    -\u003E System.Security.Permissions.MediaPermissionVideo",
+            "protectedId": "T:System.Security.Permissions.MediaPermissionVideo",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.mediapermissionvideo",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "8b19359c-811b-431c-9472-7fd06495adce",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationCore.dll",
+            "snippet": "System.Security.CodeAccessPermission System.Windows.Media.GlyphTypeface::CriticalFileReadPermission()\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7789c690-d389-4479-a425-c9c4b74d3ea4",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.WebBrowserPermission\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7e3fa099-9342-4047-8114-1becd52b5c24",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.UserInitiatedRoutedEventPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "97baea9e-9a00-4be2-a2a8-e35a385dfb0e",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Void MS.Internal.Permissions.RightsManagementPermission::.ctor(System.Security.Permissions.PermissionState)\r\n    -\u003E System.Security.Permissions.PermissionState",
+            "protectedId": "T:System.Security.Permissions.PermissionState",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.permissionstate",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "0e135d8b-563e-4d8a-a0f5-e77e9e6b5ca9",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "MS.Internal.Permissions.CompoundFileIOPermission\r\n    -\u003E System.Security.CodeAccessPermission",
+            "protectedId": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "f2de19d8-2c64-4299-b9b9-59276b7175bc",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Void MS.Internal.Utility.SponsorHelper::.ctor(System.Runtime.Remoting.Lifetime.ILease,System.TimeSpan)\r\n    -\u003E System.Runtime.Remoting.Lifetime.ILease",
+            "protectedId": "T:System.Runtime.Remoting.Lifetime.ILease",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.remoting.lifetime.ilease",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7f3e39fe-7725-4707-ab97-b31096660b8a",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "MS.Internal.Utility.SponsorHelper\r\n    -\u003E System.Runtime.Remoting.Lifetime.ISponsor",
+            "protectedId": "T:System.Runtime.Remoting.Lifetime.ISponsor",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.remoting.lifetime.isponsor",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "5848349f-657c-4ef8-a9b0-b6714a92f7be",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Runtime.Hosting.ApplicationActivator System.Windows.Interop.PresentationAppDomainManager::ApplicationActivator()\r\n    -\u003E System.Runtime.Hosting.ApplicationActivator",
+            "protectedId": "T:System.Runtime.Hosting.ApplicationActivator",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.hosting.applicationactivator",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "f3c0801c-3065-4369-85a1-4c28b4152220",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermissionAttribute\r\n    -\u003E System.Security.Permissions.CodeAccessSecurityAttribute",
+            "protectedId": "T:System.Security.Permissions.CodeAccessSecurityAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.codeaccesssecurityattribute",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "92a6e253-46b5-4bda-b123-0b6298d43b5a",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.Permissions.MediaPermission\r\n    -\u003E System.Security.Permissions.IUnrestrictedPermission",
+            "protectedId": "T:System.Security.Permissions.IUnrestrictedPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.iunrestrictedpermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "164bda17-57e3-47bd-be1d-0bc2d5f20aa6",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Runtime.Remoting.ObjectHandle System.Windows.Interop.PresentationApplicationActivator::CreateInstance(System.ActivationContext)\r\n    -\u003E System.ActivationContext",
+            "protectedId": "T:System.ActivationContext",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.activationcontext",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "7965863a-5cc4-474e-a38a-d81df4918d6e",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Windows.Interop.PresentationApplicationActivator\r\n    -\u003E System.Runtime.Hosting.ApplicationActivator",
+            "protectedId": "T:System.Runtime.Hosting.ApplicationActivator",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.hosting.applicationactivator",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b5d0ee89-33e6-4888-a23f-28f03e231557",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\WindowsBase.dll",
+            "snippet": "System.Security.IPermission System.Security.Permissions.MediaPermission::Union(System.Security.IPermission)\r\n    -\u003E System.Security.IPermission",
+            "protectedId": "T:System.Security.IPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.ipermission",
+                "isCustom": true
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "9c5a5107-cdd9-499b-88ec-0536d2e61948",
+          "ruleId": "Api.0001",
+          "projectPath": "C:\\IA_anu2\\MVP\\Supermarket\\Supermarket\\Supermarket.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Binary",
+            "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8\\PresentationFramework.dll",
+            "snippet": "System.Windows.Interop.PresentationAppDomainManager\r\n    -\u003E System.AppDomainManager",
+            "protectedId": "T:System.AppDomainManager",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.appdomainmanager",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0001": {
+      "id": "Project.0001",
+      "description": "Project file needs to be converted to SDK style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "description": "API is obsolete.",
+      "label": "API is obsolete",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "description": "API does not exist in the selected version of .NET. See breaking changes documentation for alternative or replacement functionality.",
+      "label": "API does not exist",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

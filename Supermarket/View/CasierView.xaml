@@ -1,0 +1,90 @@
+﻿<Window x:Class="Supermarket.View.CasierView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Supermarket.ViewModel"
+        mc:Ignorable="d"
+        Title="Casier" Height="600" Width="800">
+    <Window.DataContext>
+        <local:CasierVM/>
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,10">
+            <Label Content="Nume:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Width="150" Margin="0,0,15,0" Text="{Binding Nume}"/>
+
+            <Label Content="Cod de Bare:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Width="150" Margin="0,0,15,0" Text="{Binding CodBare}"/>
+
+            <Label Content="Producator:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox Width="150" Margin="0,0,15,0"
+                      ItemsSource="{Binding ProducatoriList}" DisplayMemberPath="Nume" SelectedValuePath="Id" SelectedValue="{Binding ProducatorId}"/>
+
+            <Label Content="Categorie:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox Width="150" Margin="0,0,15,0"
+                      ItemsSource="{Binding CategoriiList}" DisplayMemberPath="Nume" SelectedValuePath="Id" SelectedValue="{Binding CategorieId}"/>
+
+            <Button Content="Cauta" Margin="0,0,0,0" Command="{Binding SearchCommand}"/>
+        </StackPanel>
+        <DataGrid x:Name="SearchResultsDataGrid"
+          Grid.Row="1"
+          Grid.Column="0"
+          Margin="0,0,10,0"
+          ItemsSource="{Binding SearchResults}"
+          AutoGenerateColumns="False"
+          SelectionMode="Single"
+          IsReadOnly="True"
+          CanUserAddRows="False"
+          CanUserDeleteRows="False"
+          AlternatingRowBackground="LightGray"
+          SelectedItem="{Binding SelectedProduct}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nume" Binding="{Binding Item1.Nume}" Width="*"/>
+                <DataGridTextColumn Header="Cod de Bare" Binding="{Binding Item1.CodBare}" Width="*"/>
+                <DataGridTextColumn Header="Producator" Binding="{Binding Item1.Producator.Nume}" Width="*"/>
+                <DataGridTextColumn Header="Categorie" Binding="{Binding Item1.Categoria.Nume}" Width="*"/>
+                <DataGridTextColumn Header="Pret" Binding="{Binding Item2, StringFormat=F2}" Width="*"/>
+                <DataGridTextColumn Header="Cantitate Disponibila" Binding="{Binding Item3}" Width="*"/>
+                <DataGridTextColumn Header="Data Epxirare" Binding="{Binding Item4,StringFormat='d'}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ListBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding BonCurent}" Margin="10,0,0,0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Cantitate}" Margin="0,0,5,0"/>
+                        <TextBlock Text="x" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Produs.Nume}" Margin="0,0,5,0"/>
+                        <TextBlock Text=" (" Margin="0,0,0,0"/>
+                        <TextBlock Text=")" Margin="0,0,5,0"/>
+                        <TextBlock Text=".......... " Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Subtotal, StringFormat=F2}" Margin="0,0,5,0"/>
+                        <TextBlock Text="lei"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Label Content="Cantitate:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Width="50" Margin="0,0,15,0" Text="{Binding CantitateSelectata}" />
+
+            <Button Content="Adauga pe bon" Command="{Binding AddToBonCommand}" Margin="0,0,10,0" CommandParameter="{Binding SelectedItem, ElementName=SearchResultsDataGrid}"/>
+            <Button Content="Finalizare bon" Command="{Binding FinalizeBonCommand}" Margin="0,0,10,0"/>
+            <Button Content="Vezi bonuri" Command="{Binding ViewBonsCommand}" Margin="0,0,10,0"/>
+        </StackPanel>
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontSize="16" FontWeight="Bold" Margin="0,20,20,0">
+            Total: <TextBlock Text="{Binding TotalBon, StringFormat=F2}" /> lei
+        </TextBlock>
+    </Grid>
+</Window>
